@@ -2,6 +2,23 @@
   margin: 0;
   padding: 0;
 }
+header{
+  background: url('../images/menu.jpg') center top no-repeat;
+  width: 100%;
+  height: 135px;
+}
+footer{
+  background: url('../images/footer.jpg') center top no-repeat;
+  width: 100%;
+  height: 175px;
+  margin-top: 50px;
+}
+.banner{
+  background: url('../images/banner.jpg') center top no-repeat;
+  width: 100%;
+  height: 227px;
+  margin-bottom: 25px;
+}
 .container{
   max-width: 1130px;
   width: 100%;
@@ -19,6 +36,7 @@
   justify-content: space-evenly;
   height: 51px;
   align-items: center;
+  border-bottom: 2px solid #fff;
 }
 .nav-environments a{
   color: #fff;
@@ -52,7 +70,6 @@
   background: -webkit-linear-gradient(left,  rgba(227,120,54,1) 0%,rgba(206,35,65,1) 100%);
   background: linear-gradient(to right,  rgba(227,120,54,1) 0%,rgba(206,35,65,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e37836', endColorstr='#ce2341',GradientType=1 );
-  margin-bottom: 100px;
 }
 .opcion{
   width: 377px;
@@ -114,7 +131,6 @@
 .pared-left {
     position: absolute;
     width: 60%;
-    background: aquamarine;
     height: 95%;
     left: 0;
     top: 1px;
@@ -124,7 +140,6 @@
     position: absolute;
     right: 0;
     width: 42%;
-    background: black;
     height: 95%;
     top: 10px;
 }
@@ -135,7 +150,9 @@
   background-color: rgba(255, 255, 255, 0.65);
   width: 220px;
   height: 100%;
+  min-height: 100%;
   max-height: 100%;
+  overflow-y: scroll;
 }
 
 .content-color{
@@ -147,6 +164,9 @@
   height: 20px;
   cursor: pointer;
 }
+.content-color:hover, .active {
+    background: rgba(0, 0, 0, 0.20);
+}
 .content-color span{
   display: flex;
   width: 44px;
@@ -157,30 +177,255 @@
   color: #3a3a3a;
   font-size: 13px;
 }
+.box-down{
+  background: rgb(227,120,54);
+  background: -moz-linear-gradient(left,  rgba(206,35,65,1) 0%, rgba(227,120,54,1) 100%);
+  background: -webkit-linear-gradient(left,  rgba(206,35,65,1) 0%, rgba(227,120,54,1) 100%);
+  background: linear-gradient(to right,  rgba(206,35,65,1) 0%, rgba(227,120,54,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ce2341', endColorstr='#e37836',GradientType=1 );
+  height: 51px;
+  line-height: 51px;
+  display: flex;
+  justify-content: space-around;
+}
+.box-down a{
+  float: right;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffF;
+  font-size: 14px;
+  padding: 0 30px;
+  border-left: 1px solid #fff;
+}
+.ambiente2 .pared-left{
+  width: 100%;
+}
+.ambiente2 .pared-right{
+  display: none;
+}
+.ambiente2 #div--false-left {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 70%;
+    opacity: 0;
+    height: 68%;
+    cursor: pointer;
+}
+.ambiente3 .pared-left{
+  width: 38%;
+}
+.ambiente3 #div--false-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 38%;
+    opacity: 0;
+    height: 73%;
+    cursor: pointer;
+}
+.ambiente3 .pared-right{
+  width: 62%;
+  top: 0;
+}
+.ambiente3 #div--false-right {
+    position: absolute;
+    right: 0;
+    width: 62%;
+    opacity: 0;
+    height: 60%;
+    top: 0px;
+    cursor: pointer;
+}
+#div--false-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60%;
+    opacity: 0;
+    height: 56%;
+    cursor: pointer;
+}
+#div--false-right{
+    position: absolute;
+    right: 0;
+    width: 42%;
+    opacity: 0;
+    height: 60%;
+    top: 60px;
+    cursor: pointer;
+}
 .blanco{
   background: #fff;
 }
 .blanco-hueso{
-  background: #d2c6ad;
+  background: #dbc49d;
 }
 .champana{
-  background: #cfc3ac;
+  background: #c1c0b9;
 }
 .melon{
-  background: #d3c8b5;
+  background: #dfc4a2;
 }
 .crema{
-  background: #e0c598;
+  background: #dac191;
 }
 .bruma{
-  background: #c8c9b9;
+  background: #cfcdb9;
 }
 .naranja-chic{
-  background: #e5c7a1;
+  background: #e0ba8e;
 }
 .thailandes{
-  background: #efca7b;
+  background: #e2ba78;
 }
 .amarillo-caribe{
-  background: #f2d100;
+  background: #ddb824;
+}
+.amarillo{
+  background: #d5a000;
+}
+.amarillo-otonial{
+  background: #eea82c;
+}
+.mandarina{
+  background: #e47543;
+}
+.naranja{
+  background: #c64d2d;
+}
+.rojo-vivo{
+  background: #b9332b;
+}
+.verde-tropical{
+  background: #5cae5d;
+}
+.azul-oceano{
+  background: #008093;
+}
+.azul-verano{
+  background: #2b5eac;
+}
+.azul-oscuro{
+  background: #1f3e70;
+}
+.rojo-emocion{
+  background: #a16f61;
+}
+.verde-pino{
+  background: #50765c;
+}
+.rojo-colonial{
+  background: #7b3c32;
+}
+.verde-intenso{
+  background: #005950;
+}
+.violeta{
+  background: #42365d;
+}
+.gris-basalto{
+  background: #6c6a68;
+}
+.negro{
+  background: #000;
+}
+.menta-fresca{
+  background: #c7d9be;
+}
+.lirio{
+  background: #b4c0cb;
+}
+.amarillo-oro{
+  background: #d09a3f;
+}
+.terracota{
+  background: #b5795c;
+}
+.gris-nube{
+  background: #a4a59d;
+}
+.azul-pacifico{
+  background: #6081a5;
+}
+.verde-chartreuse{
+  background: #a19d70;
+}
+.azul-porcelana{
+  background: #c2d1ff;
+}
+.lino-crudo{
+  background: #fef7dc;
+}
+.blanco-invierno{
+  background: #f9f7f1;
+}
+.verde-aceituna{
+  background: #4b6145;
+}
+.blanco-almendra{
+  background: #d8d1b8;
+}
+.blanco-manzana{
+  background: #d2d8b5;
+}
+.curuba{
+  background: #d2d8b5;
+}
+.palo-de-rosa{
+  background: #cfa882;
+}
+.mora{
+  background: #cba998;
+}
+.verde-seda{
+  background: #cfd699;
+}
+.aguamarina{
+  background: #94c5bc;
+}
+.verde-agua{
+  background: #bfc096;
+}
+.verde-mar{
+  background: #6ab584;
+}
+.lila{
+  background: #a59aaf;
+}
+.azul-cielo{
+  background: #77b2da;
+}
+.azul-milano{
+  background: #6485ba;
+}
+.coral{
+  background: #e3bfa5;
+}
+.lima{
+  background: #c5bb7e;
+}
+.arena{
+  background: #cfc9b5;
+}
+.pomarosa{
+  background: #cbcbc6;
+}
+.rosa{
+  background: #d791ba;
+}
+.verde-turquesa{
+  background: #658a7f;
+}
+.ocre{
+  background: #ae7e35;
+}
+.trigo{
+  background: #e6d9c1;
+}
+.blanco-durazno{
+  background: #ffffef;
+}
+.blanco-lila{
+  background: #fff8ff;
 }
