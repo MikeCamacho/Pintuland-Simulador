@@ -211,6 +211,10 @@ footer{
     opacity: 0;
     height: 68%;
     cursor: pointer;
+    left: auto;
+}
+.ambiente2 #div--false-right{
+  display: none;
 }
 .ambiente3 .pared-left{
   width: 38%;
