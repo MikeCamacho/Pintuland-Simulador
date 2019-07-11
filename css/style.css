@@ -101,6 +101,22 @@ footer{
   position: absolute;
   top: 50%;
 }
+.opcion-1--comedor{
+  background-image: url('../images/comedor-1.jpg');
+  background-position: left top;
+}
+.opcion-1--alcoba{
+  background-image: url('../images/alcoba-1.jpg');
+  background-position: left top;
+}
+.opcion-1--fachada{
+  background-image: url('../images/fachada-1.jpg');
+  background-position: left top;
+}
+.opcion-1--madera{
+  background-image: url('../images/madera-1.jpg');
+  background-position: left top;
+}
 .opcion-2{
   background-image: url('../images/sala-2.jpg');
   background-position: center top;
@@ -110,6 +126,22 @@ footer{
   position: absolute;
   top: calc(50% + 58px);
 }
+.opcion-2--comedor{
+  background-image: url('../images/comedor-2.jpg');
+  background-position: left top;
+}
+.opcion-2--alcoba{
+  background-image: url('../images/alcoba-2.jpg');
+  background-position: left top;
+}
+.opcion-2--fachada{
+  background-image: url('../images/fachada-2.jpg');
+  background-position: left top;
+}
+.opcion-2--madera{
+  background-image: url('../images/madera-2.jpg');
+  background-position: left top;
+}
 .opcion-3{
   background-image: url('../images/sala-3.jpg');
   background-position: right top;
@@ -118,6 +150,22 @@ footer{
   background: rgba(137, 178, 64, 0.75);
   position: absolute;
   top: calc(50% - 58px);
+}
+.opcion-3--comedor{
+  background-image: url('../images/comedor-3.jpg');
+  background-position: left top;
+}
+.opcion-3--alcoba{
+  background-image: url('../images/alcoba-3.jpg');
+  background-position: left top;
+}
+.opcion-3--fachada{
+  background-image: url('../images/fachada-3.jpg');
+  background-position: left top;
+}
+.opcion-3--madera{
+  background-image: url('../images/madera-3.jpg');
+  background-position: left top;
 }
 .p-relative{
   position: relative;
@@ -136,12 +184,57 @@ footer{
     top: 1px;
     cursor: pointer;
 }
+.pared-left--comedor{
+  width: 100%;
+}
+.pared-left--alcoba{
+  width: 31%;
+}
+.pared-left--alcoba-2{
+  width: 64%;
+}
+.pared-left--alcoba-3{
+  width: 35%;
+}
+.pared-left--fachada{
+  width: 54%;
+}
+.pared-left--fachada2{
+  width: 44%;
+}
+.pared-left--fachada3{
+  width: 48%;
+}
 .pared-right {
     position: absolute;
     right: 0;
     width: 42%;
     height: 95%;
     top: 10px;
+}
+.pared-right--alcoba{
+  width: calc(69% + 1px);
+  top: 1px;
+}
+.pared-right--alcoba-2{
+  width: calc(36% + 1px);
+  top: 1px;
+}
+.pared-right--alcoba-3{
+  width: calc(65% + 1px);
+  top: 1px;
+}
+.pared-right--fachada{
+  width: calc(46% + 1px);
+  top: 1px;
+}
+.pared-right--fachada2{
+  width: calc(56% + 1px);
+  top: 1px;
+}
+.pared-right--fachada3{
+  width: calc(52% + 1px);
+  top: 1px;
 }
 .colors{
   position: absolute;

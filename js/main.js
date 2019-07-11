@@ -7,7 +7,7 @@ const divHover = document.getElementById('div-falses');
   divHover.addEventListener('click', function(evt) {
     var target = evt.target;
     if (target == hoverLeft) {
-      
+
       console.log('mikeizq');
       color.forEach(function(mike){
         mike.addEventListener('click', function(){
