@@ -117,6 +117,10 @@ footer{
   background-image: url('../images/madera-1.jpg');
   background-position: left top;
 }
+.opcion-1--otros{
+  background-image: url('../images/otros-1.jpg');
+  background-position: left top;
+}
 .opcion-2{
   background-image: url('../images/sala-2.jpg');
   background-position: center top;
@@ -142,6 +146,10 @@ footer{
   background-image: url('../images/madera-2.jpg');
   background-position: left top;
 }
+.opcion-2--otros{
+  background-image: url('../images/otros-2.jpg');
+  background-position: left top;
+}
 .opcion-3{
   background-image: url('../images/sala-3.jpg');
   background-position: right top;
@@ -165,6 +173,10 @@ footer{
 }
 .opcion-3--madera{
   background-image: url('../images/madera-3.jpg');
+  background-position: left top;
+}
+.opcion-3--otros{
+  background-image: url('../images/otros-3.jpg');
   background-position: left top;
 }
 .p-relative{

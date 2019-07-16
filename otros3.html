@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
+    <title>Simulador Pintuland</title>
+  </head>
+  <body>
+    <header>
+    </header>
+    <div class="banner"></div>
+  <div class="container">
+    <div class="nav-environments">
+      <a href="comedor.html">Comedor</a>
+      <a href="index.html">Sala</a>
+      <a href="alcoba.html">Alcoba</a>
+      <a href="fachada.html">Fachada Exterior</a>
+      <a href="madera.html">Madera</a>
+      <a href="otros.html">Otros</a>
+    </div>
+    <div class="title">
+      <p>Seleccione una pared</p>
+    </div>
+    <div class="intro p-relative pared">
+      <div class="pared-left pared-left--otros3" id="paredLeft"></div>
+      <div class="pared-right pared-right--otros3" id="paredRight"></div>
+      <img src="images/otros3-sin.png">
+      <div id="div-falses">
+        <div id="div--false-left" style="width: 54%;height: 82%;"></div>
+        <div id="div--false-right" style="width: 46%;height: 74%;"></div>
+      </div>
+
+      <div class="colors">
+        <div class="content-color active" data-color="#fff">
+          <span class="blanco"></span>
+          <p>Blanco</p>
+        </div>
+        <div class="content-color" data-color="#dbc49d">
+          <span class="blanco-hueso"></span>
+          <p>Blanco Hueso</p>
+        </div>
+        <div class="content-color" data-color="#c1c0b9">
+          <span class="champana"></span>
+          <p>Champaña</p>
+        </div>
+        <div class="content-color" data-color="#dfc4a2">
+          <span class="melon"></span>
+          <p>Melon</p>
+        </div>
+        <div class="content-color" data-color="#dac191">
+          <span class="crema"></span>
+          <p>Crema</p>
+        </div>
+        <div class="content-color" data-color="#cfcdb9">
+          <span class="bruma"></span>
+          <p>Bruma</p>
+        </div>
+        <div class="content-color" data-color="#e0ba8e">
+          <span class="naranja-chic"></span>
+          <p>Naranja Chic</p>
+        </div>
+        <div class="content-color" data-color="#e2ba78">
+          <span class="thailandes"></span>
+          <p>Thailandés</p>
+        </div>
+        <div class="content-color" data-color="#ddb824">
+          <span class="amarillo-caribe"></span>
+          <p>Amarillo Caribe</p>
+        </div>
+        <div class="content-color" data-color="#d5a000">
+          <span class="amarillo"></span>
+          <p>Amarillo</p>
+        </div>
+        <div class="content-color" data-color="#eea82c">
+          <span class="amarillo-otonial"></span>
+          <p>Amarillo Otoñal</p>
+        </div>
+        <div class="content-color" data-color="#e47543">
+          <span class="mandarina"></span>
+          <p>Mandarina</p>
+        </div>
+        <div class="content-color" data-color="#c64d2d">
+          <span class="naranja"></span>
+          <p>Naranja</p>
+        </div>
+        <div class="content-color" data-color="#b9332b">
+          <span class="rojo-vivo"></span>
+          <p>Rojo Vivo</p>
+        </div>
+        <div class="content-color" data-color="#5cae5d">
+          <span class="verde-tropical"></span>
+          <p>Verde Tropical</p>
+        </div>
+        <div class="content-color" data-color="#008093">
+          <span class="azul-oceano"></span>
+          <p>Azul Oceano</p>
+        </div>
+        <div class="content-color" data-color="#2b5eac">
+          <span class="azul-verano"></span>
+          <p>Azul verano</p>
+        </div>
+        <div class="content-color" data-color="#1f3e70">
+          <span class="azul-oscuro"></span>
+          <p>Azul Oscuro</p>
+        </div>
+        <div class="content-color" data-color="#a16f61">
+          <span class="rojo-emocion"></span>
+          <p>Rojo Emocion</p>
+        </div>
+        <div class="content-color" data-color="#50765c">
+          <span class="verde-pino"></span>
+          <p>Verde pino</p>
+        </div>
+        <div class="content-color" data-color="#7b3c32">
+          <span class="rojo-colonial"></span>
+          <p>Rojo Colonial</p>
+        </div>
+        <div class="content-color" data-color="#005950">
+          <span class="verde-intenso"></span>
+          <p>Verde Intenso</p>
+        </div>
+        <div class="content-color" data-color="#42365d">
+          <span class="violeta"></span>
+          <p>Violeta</p>
+        </div>
+        <div class="content-color" data-color="#6c6a68">
+          <span class="gris-basalto"></span>
+          <p>Gris Basalto</p>
+        </div>
+        <div class="content-color" data-color="#000">
+          <span class="negro"></span>
+          <p>Negro</p>
+        </div>
+        <div class="content-color" data-color="#c7d9be">
+          <span class="menta-fresca"></span>
+          <p>Menta Fresca</p>
+        </div>
+        <div class="content-color" data-color="#b4c0cb">
+          <span class="lirio"></span>
+          <p>Lirio</p>
+        </div>
+        <div class="content-color" data-color="#d09a3f">
+          <span class="amarillo-oro"></span>
+          <p>Amarillo Oro</p>
+        </div>
+        <div class="content-color" data-color="#b5795c">
+          <span class="terracota"></span>
+          <p>Terracota</p>
+        </div>
+        <div class="content-color" data-color="#a4a59d">
+          <span class="gris-nube"></span>
+          <p>Gris Nube</p>
+        </div>
+        <div class="content-color" data-color="#6081a5">
+          <span class="azul-pacifico"></span>
+          <p>Azul Pacifico</p>
+        </div>
+        <div class="content-color" data-color="#a19d70">
+          <span class="verde-chartreuse"></span>
+          <p>Verde chartreuse</p>
+        </div>
+        <div class="content-color" data-color="#c2d1ff">
+          <span class="azul-porcelana"></span>
+          <p>Azul Porcelana</p>
+        </div>
+        <div class="content-color" data-color="#fef7dc">
+          <span class="lino-crudo"></span>
+          <p>Lino crudo</p>
+        </div>
+        <div class="content-color" data-color="#f9f7f1">
+          <span class="blanco-invierno"></span>
+          <p>Blanco Invierno</p>
+        </div>
+        <div class="content-color" data-color="#4b6145">
+          <span class="verde-aceituna"></span>
+          <p>Verde aceituna</p>
+        </div>
+        <div class="content-color" data-color="#d8d1b8">
+          <span class="blanco-almendra"></span>
+          <p>Blanco Almendra</p>
+        </div>
+        <div class="content-color" data-color="#d2d8b5">
+          <span class="blanco-manzana"></span>
+          <p>Blanco Manzana</p>
+        </div>
+        <div class="content-color" data-color="#d2d8b5">
+          <span class="curuba"></span>
+          <p>Curuba</p>
+        </div>
+        <div class="content-color" data-color="#cfa882">
+          <span class="palo-de-rosa"></span>
+          <p>Palo de Rosa</p>
+        </div>
+        <div class="content-color" data-color="#cba998">
+          <span class="mora"></span>
+          <p>Mora</p>
+        </div>
+        <div class="content-color" data-color="#cfd699">
+          <span class="verde-seda"></span>
+          <p>Verde Seda</p>
+        </div>
+        <div class="content-color" data-color="#94c5bc">
+          <span class="aguamarina"></span>
+          <p>Aguamarina</p>
+        </div>
+        <div class="content-color" data-color="#bfc096">
+          <span class="verde-agua"></span>
+          <p>Verde Agua</p>
+        </div>
+        <div class="content-color" data-color="#6ab584">
+          <span class="verde-mar"></span>
+          <p>Verde mar</p>
+        </div>
+        <div class="content-color" data-color="#a59aaf">
+          <span class="lila"></span>
+          <p>Lila</p>
+        </div>
+        <div class="content-color" data-color="#77b2da">
+          <span class="azul-cielo"></span>
+          <p>Azul Cielo</p>
+        </div>
+        <div class="content-color" data-color="#6485ba">
+          <span class="azul-milano"></span>
+          <p>Azul Milano</p>
+        </div>
+        <div class="content-color" data-color="#e3bfa5">
+          <span class="coral"></span>
+          <p>Coral</p>
+        </div>
+        <div class="content-color" data-color="#c5bb7e">
+          <span class="lima"></span>
+          <p>Lima</p>
+        </div>
+        <div class="content-color" data-color="#cfc9b5">
+          <span class="arena"></span>
+          <p>Arena</p>
+        </div>
+        <div class="content-color" data-color="#cbcbc6">
+          <span class="pomarosa"></span>
+          <p>Pomarosa</p>
+        </div>
+        <div class="content-color" data-color="#d791ba">
+          <span class="rosa"></span>
+          <p>Rosa</p>
+        </div>
+        <div class="content-color" data-color="#658a7f">
+          <span class="verde-turquesa"></span>
+          <p>Verde Turquesa</p>
+        </div>
+        <div class="content-color" data-color="#ae7e35">
+          <span class="ocre"></span>
+          <p>Ocre</p>
+        </div>
+        <div class="content-color" data-color="#e6d9c1">
+          <span class="trigo"></span>
+          <p>Trigo</p>
+        </div>
+        <div class="content-color" data-color="#ffffef">
+          <span class="blanco-durazno"></span>
+          <p>Blanco Durazno</p>
+        </div>
+        <div class="content-color" data-color="#fff8ff">
+          <span class="blanco-lila"></span>
+          <p>Blanco Lila</p>
+        </div>
+      </div>
+    </div>
+    <div class="title box-down">
+      <p>Seleccione una pared</p><a href="otros.html" class="back">Volver</a>
+    </div>
+    <script src="js/main.js"></script>
+  </div>
+  <footer>
+  </footer>
+</body>
+</html>
