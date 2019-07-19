@@ -1,40 +1,39 @@
-const color = document.querySelectorAll('.content-color');
+const colores = document.querySelectorAll('.content-color');
 const hoverLeft = document.getElementById('div--false-left');
 const hoverRight = document.getElementById('div--false-right');
 const divHover = document.getElementById('div-falses');
+const paredizq = document.getElementById('paredLeft');
+const paredder = document.getElementById('paredRight');
 
+var pared = '';
+
+colores.forEach(function(item){
+  item.addEventListener('click', function(){
+    color = this.dataset.color;
+    console.log(color);
+    pared.style.background = color;
+  })
+})
 
   divHover.addEventListener('click', function(evt) {
     var target = evt.target;
+    console.log(target);
     if (target == hoverLeft) {
+      pared = paredizq;
 
-      console.log('mikeizq');
-      color.forEach(function(mike){
-        mike.addEventListener('click', function(){
-          const hexaColor = this.dataset.color;
-          const pared = document.getElementById('paredLeft')
-          pared.style.background = hexaColor;
-        }, false)
-      })
+      console.log(paredizq);
+      return;
     }
-    else if (target == hoverRight){
-      var target = hoverRight;
-      console.log('mikederecha');
-      color.forEach(function(mike1){
-        mike1.addEventListener('click', function(){
-          const hexaColor = this.dataset.color;
-          const pared2 = document.getElementById('paredRight')
-          pared2.style.background = hexaColor;
-        },false)
-      },false)
-    }
+    pared = paredder;
+
+
   });
 
 
 
 
-for (var i = 0; i < color.length; i++) {
-  color[i].addEventListener("click", function() {
+for (var i = 0; i < colores.length; i++) {
+  colores[i].addEventListener("click", function() {
   var current = document.getElementsByClassName("active");
   current[0].className = current[0].className.replace(" active", "");
   this.className += " active";
@@ -46,7 +45,7 @@ hoverLeft.addEventListener("mouseover", function( event ) {
 }, false);
 
 hoverLeft.addEventListener("mouseout", function( event ) {
-  paredLeft.style.background = "";
+  pared.style.background = color;
 }, false);
 
 hoverRight.addEventListener("mouseover", function( event ) {
@@ -54,5 +53,5 @@ hoverRight.addEventListener("mouseover", function( event ) {
 }, false);
 
 hoverRight.addEventListener("mouseout", function( event ) {
-  paredRight.style.background = "";
+  pared.style.background = color;
 }, false);
