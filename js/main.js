@@ -4,14 +4,21 @@ const hoverRight = document.getElementById('div--false-right');
 const divHover = document.getElementById('div-falses');
 const paredizq = document.getElementById('paredLeft');
 const paredder = document.getElementById('paredRight');
+const svg = document.getElementById('div-svg');
+const path = document.getElementById('path');
+const svgLeft = document.getElementById('svg-left');
+const svgRight = document.getElementById('svg-right');
+const paths = document.getElementById('path2');
+
 
 var pared = '';
-
+var svgP = '';
 colores.forEach(function(item){
   item.addEventListener('click', function(){
     color = this.dataset.color;
     console.log(color);
     pared.style.background = color;
+    svgP.style.fill = color;
   })
 })
 
@@ -26,8 +33,20 @@ colores.forEach(function(item){
     }
     pared = paredder;
 
-
   });
+
+svg.addEventListener('click', function(evt){
+    var target = evt.target;
+    console.log(target);
+    if (target == path) {
+      console.log("mike");
+      pared = paredder;
+      svgP = path;
+      return;
+    }
+    pared = paredizq;
+    svgP = paths;
+})
 
 
 

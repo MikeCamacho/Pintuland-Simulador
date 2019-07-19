@@ -364,6 +364,38 @@ footer{
     top: 60px;
     cursor: pointer;
 }
+.d-none{
+  display: none;
+}
+#div-svg svg{
+  cursor: pointer;
+  opacity: .4;
+}
+.svg-right{
+    position: absolute;
+    top: 396px;
+    right: 6px;
+}
+.svg-right-madera2{
+    position: absolute;
+    top: 536px;
+    right: 71px;
+}
+.svg-right-madera3{
+    position: absolute;
+    top: 246px;
+    left: 0px;
+}
+.svg-left{
+    position: absolute;
+    top: 438px;
+    left: 7px;
+}
+.svg-left-madera2{
+    position: absolute;
+    top: 478px;
+    left: 189px;
+}
 .blanco{
   background: #fff;
 }
