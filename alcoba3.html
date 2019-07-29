@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">-->
     <title>Simulador Pintuland</title>
   </head>
   <body>
@@ -23,12 +23,21 @@
       <p>Seleccione una pared</p>
     </div>
     <div class="intro p-relative pared">
-      <div class="pared-left pared-left--alcoba-3" id="paredLeft"></div>
-      <div class="pared-right pared-right--alcoba-3" id="paredRight"></div>
+      <div class="pared-left pared-left--alcoba-3 d-none" id="paredLeft"></div>
+      <div class="pared-right pared-right--alcoba-3 d-none" id="paredRight"></div>
       <img src="images/alcoba3-sin.png">
-      <div id="div-falses">
+      <div id="div-falses" class="d-none">
         <div id="div--false-left" style="width:35%;height: 51%;"></div>
         <div id="div--false-right" style="width:65%;height:70%;"></div>
+      </div>
+      <div id="div-svg" class="div-svg">
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="407" height="485" viewBox="0 0 407 485" fill="none" class="svg-left-alcoba3">
+          <path id="path" d="M406.5 0.5H0.5L0 485L73 476.5V461.5L146 453C144 446.5 147.5 398.5 148 395C148.4 392.2 161.5 388.5 168 387L406.5 367.5V0.5Z" fill="#6E0277"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="723" height="536" viewBox="0 0 723 536" fill="none" class="svg-right-alcoba3">
+          <path id="path2" d="M0 0H723L722.5 536L678 530L677 529L682 528.5V524.5L674 518.5L673 486C673.4 485.2 685.167 484 691 483.5C699 483.5 700.667 479.167 700.5 477L701 459.5L700 458.5C682 464 674 460.5 666.5 458C660.5 456 660.333 453.833 661 453C665.5 447.5 662.5 444 661 442.5C659.8 441.3 660.5 439.333 661 438.5C661.833 437.333 663.6 434.7 664 433.5C664.5 432 657.5 433.5 655.5 433.5C653.9 433.5 653.167 432.5 653 432C652.833 433.167 651.5 435 647.5 433C642.5 430.5 641 435 642.5 436.5C644 438 644.5 441 643.5 442C640 447.5 641 449 643.5 452.5C645.5 455.3 640 457 637 457.5L621 458.5C621 457.833 619.9 456.1 615.5 454.5C611.1 452.9 608.667 456.5 608 458.5H602.5C602.333 461.167 601.9 467.7 601.5 472.5C601.1 477.3 605.667 477.833 608 477.5C611.2 482.7 625.333 483.667 632 483.5L630.5 513.5L620 520L541 513.5V512H545V485L546 484.5L549.5 254L536 252L147.5 265V306.5C116.7 308.1 89 326.833 79 336H78V216.5C79.1667 215 82 212 82.5 209.5C83 207 81.1667 206 80 205.5V203.5C86 203 96 203 101 190C106.6 175.2 93.6667 157.167 86.5 150L57 151L56.5 151.5C54.1667 152.833 48.8 160.5 46 180.5C43.2 200.5 59.5 205.5 68 205.5V209.5C64.8 212.3 67.3333 213 69 213C69.8 215 72.6667 216.833 74 217.5L75 337.5L42.5 367L1 368L0 0Z" fill="#0DB18A"/>
+        </svg>
       </div>
 
       <div class="colors">

@@ -65,11 +65,11 @@ footer{
   height: 755px;
   padding: 1px 1px 2px 1px;
   max-width: 100%;
-  background: rgb(227,120,54);
+  /*background: rgb(227,120,54);
   background: -moz-linear-gradient(left,  rgba(227,120,54,1) 0%, rgba(206,35,65,1) 100%);
   background: -webkit-linear-gradient(left,  rgba(227,120,54,1) 0%,rgba(206,35,65,1) 100%);
   background: linear-gradient(to right,  rgba(227,120,54,1) 0%,rgba(206,35,65,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e37836', endColorstr='#ce2341',GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e37836', endColorstr='#ce2341',GradientType=1 );*/
 }
 .opcion{
   width: 377px;
@@ -368,8 +368,16 @@ footer{
   display: none;
 }
 #div-svg svg{
-  cursor: pointer;
   opacity: .4;
+}
+.div-svg svg{
+  opacity: 1 !important;
+}
+.div-svg svg path{
+  cursor: pointer;
+}
+.div-svg svg path:hover{
+  opacity: 0.8 !important;
 }
 .svg-right{
     position: absolute;
@@ -395,6 +403,151 @@ footer{
     position: absolute;
     top: 478px;
     left: 189px;
+}
+.svg-left-sala1 {
+    position: absolute;
+    left: 0px;
+    top: -1px;
+}
+.svg-right-sala1 {
+    position: absolute;
+    right: 84px;
+    top: 66px;
+}
+.svg-left-sala2 {
+    position: absolute;
+    left: -2px;
+    top: 3px;
+}
+.svg-right-sala2 {
+    position: absolute;
+    right: 35px;
+    top: 2px;
+}
+.svg-left-sala3 {
+    position: absolute;
+    left: 133px;
+    top: 35px;
+}
+.svg-right-sala3 {
+    position: absolute;
+    right: 0px;
+    top: 34px;
+}
+.svg-left-comedor1 {
+    position: absolute;
+    left: 20px;
+    top: 2px;
+}
+.svg-right-comedor1 {
+    position: absolute;
+    right: 0px;
+    top: 2px;
+}
+.svg-left-comedor2 {
+    position: absolute;
+    left: 291px;
+    top: 2px;
+}
+.svg-right-comedor2 {
+    position: absolute;
+    right: 0px;
+    top: 2px;
+}
+.svg-left-comedor3 {
+    position: absolute;
+    left: 0px;
+    top: 2px;
+}
+.svg-right-comedor3 {
+    position: absolute;
+    right: 261px;
+    top: 2px;
+}
+.svg-right-alcoba1 {
+    position: absolute;
+    right: 0px;
+    top: 2px;
+}
+.svg-left-alcoba2 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.svg-right-alcoba2 {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.svg-left-alcoba3 {
+    position: absolute;
+    left: 0px;
+    top: 3px;
+}
+.svg-right-alcoba3 {
+    position: absolute;
+    right: 0px;
+    top: 3px;
+}
+.svg-left-fachada1 {
+    position: absolute;
+    left: 51px;
+    top: 205px;
+}
+.svg-right-fachada1 {
+    position: absolute;
+    right: 75px;
+    top: 309px;
+}
+.svg-left-fachada2{
+    position: absolute;
+    left: 197px;
+    top: 279px;
+}
+.svg-right-fachada2 {
+    position: absolute;
+    right: 230px;
+    top: 132px;
+}
+.svg-left-fachada3{
+    position: absolute;
+    left: -1px;
+    top: 155px;
+}
+.svg-right-fachada3 {
+    position: absolute;
+    right: 80px;
+    top: 152px;
+}
+.svg-left-otros1{
+    position: absolute;
+    left: 243px;
+    top: 4px;
+}
+.svg-right-otros1 {
+    position: absolute;
+    right: 0px;
+    top: 2px;
+}
+.svg-left-otros2{
+    position: absolute;
+    left: -1px;
+    top: 23px;
+}
+.svg-right-otros2 {
+    position: absolute;
+    right: 80px;
+    top: 113px;
+}
+.svg-left-otros3{
+    position: absolute;
+    left: 168px;
+    top: 151px;
+}
+.svg-right-otros3 {
+    position: absolute;
+    right: 0px;
+    top: 3px;
 }
 .blanco{
   background: #fff;
